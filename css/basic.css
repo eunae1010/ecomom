@@ -190,6 +190,7 @@ main {
 .eco_act {
   position: relative;
   margin-top: 50px;
+  padding: 0 10px;
 }
 .eco_act > div {
   position: relative;
@@ -199,11 +200,17 @@ main {
   top: 50%;
   transform: translateY(-50%);
 }
+.eco_act > button img {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+}
 .eco_act_left {
-  left: -50px;
+  left: -10px;
 }
 .eco_act_right {
-  right: -50px;
+  right: -10px;
 }
 .eco_act1, .eco_act2, .eco_act3 {
   width: 70%;
@@ -291,7 +298,7 @@ footer {
 }
 .footer_add dt {
   float: left;
-  width: 140px;
+  width: 100px;
   color: #111;
 }
 .footer_add dd a:hover {
@@ -299,7 +306,6 @@ footer {
 }
 
 .lnb {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -367,8 +373,10 @@ footer {
   z-index: 105;
 }
 
-@media (max-width:500px) {
-  .ecolovers_img h3 {
-    
+@media (max-width:600px) {
+  .eco_act span p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;    
   }
 }
