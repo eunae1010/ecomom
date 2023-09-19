@@ -98,7 +98,6 @@ header button {
 
 main {
   width: 100%;
-  /* padding-top: 55px; */
 }
 
 .swiper {
@@ -161,22 +160,15 @@ main {
 }
 .ecolovers_img img {
   width: 100%;
-}
-.ecolovers_img1, .ecolovers_img2, .ecolovers_img3 {
-  flex: 1;
-  height: 400px;
-  border: 1px solid #ddd;
   box-shadow: 2px 2px 4px 0.06px;
 }
+.ecolovers_img1, .ecolovers_img2, .ecolovers_img3 {
+  /* flex: 1; */
+}
 .ecolovers_img h3 {
+  margin-top: 10px;
   font-size: 15px;
   font-weight: 700;
-  line-height: 40px;
-}
-.ecolovers_img p {
-  height: 100%;
-  padding: 0 15px 15px;
-  font-size: 13px;
 }
 .ecoWork_img {
   display: flex;
@@ -185,105 +177,94 @@ main {
   text-align: center;
 }
 .ecoWork_img img {
-  width: 120px;
-  background: rgba(0,0,0);
-  border-radius: 50%;
-}
-.ecoWork_img1, .ecoWork_img2, .ecoWork_img3, .ecoWork_img4 {
-  flex: 1;
-}
-.ecoWork_img1 img {
-  /* background: #006e43; */
-}
-.ecoWork_img2 img {
-  /* background: #3dae2b; */
-}
-.ecoWork_img3 img {
-  /* background: #3cb4e5; */
-}
-.ecoWork_img4 img {
-  /* background: #35404c; */
+  width: 70%;
+  background: #000;
+  filter: invert(1);
 }
 .ecoWork_img p {
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 700;
   line-height: 20px;
-}
-.ecoWork_img p strong {
-  font-size: 14px;
-  line-height: 30px;
 }
 
 .eco_act {
+  position: relative;
   margin-top: 50px;
-  border: 1px solid #ddd;
-  /* color: #fff; */
 }
 .eco_act > div {
   position: relative;
 }
-.eco_act img {
-  display: flex;
-  width: 50%;
+.eco_act > button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.eco_act_left {
+  left: -50px;
+}
+.eco_act_right {
+  right: -50px;
 }
 .eco_act1, .eco_act2, .eco_act3 {
-  width: 50%;
-  height: 250px;
+  width: 70%;
+  height: 200px;
+  margin-bottom: 50px;
 }
 .eco_act1 {
   background: url('../img/bt_img1.png') no-repeat center center / cover;
 }
 .eco_act2 {
-  position: absolute;
-  left: 50%;
   background: url('../img/bt_img2.png') no-repeat center center / cover;
 }
 .eco_act3 {
-  background: url('../img/bt_img3.png') no-repeat 20% 50% / cover;
+  background: url('../img/bt_img3.png') no-repeat center center / cover;
 }
-.eco_act a {
-  
+.eco_act2, .eco_act3 {
+  display: none;
 }
 .eco_act span {
   position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100%;
-  padding: 0 20px;
+  top: 20px;
+  left: 83%;
+  width: 60%;
+  height: 80%;
+  background: #fff;
+  box-shadow: 2px 2px 4px 0.06px;
+  border-radius: 16px 16px 0;
 }
 .eco_act1 span {
   /* background: rgba(0,110,67,0.8); */
 }
 .eco_act2 span {
-  left: -100%;
-  /* background: rgba(61,174,43,0.8); */
+  background: rgba(61,174,43,0.8);
 }
 .eco_act3 span {
-  /* background: rgba(60,180,229,0.8); */
+  background: rgba(60,180,229,0.8);
 }
 .eco_act span h3 {
-  font-size: 18px;
+  padding: 20px 20px 5px;
   font-weight: 700;
-  line-height: 80px;
-  text-align: center;
 }
-
-/* .support {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  top: 460px;
-  padding: 10px;
-  background: #f5f5f5;
+.eco_act span p {
+  padding: 0 20px;
   font-size: 12px;
 }
-.support strong {
-  font-size: 14px;
-} */
+.eco_act span button {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  text-indent: -9999px;
+  background: url('../img/plus_icon.png') no-repeat 0 0 / 20px 20px;
+}
 
 footer {
   width: 100%;
-  padding: 50px 0;
+  margin-top: 50px;
+  padding: 50px 10px;
+  border-top: 1px solid #ddd;
   color: #666;
   font-size: 11px;
 }
@@ -308,11 +289,9 @@ footer {
   color: #666;
   font-size: 11px;
 }
-.footer_add dl {
-}
 .footer_add dt {
   float: left;
-  width: 180px;
+  width: 140px;
   color: #111;
 }
 .footer_add dd a:hover {
@@ -320,6 +299,7 @@ footer {
 }
 
 .lnb {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -385,4 +365,10 @@ footer {
   bottom: 0;
   background: rgba(0,0,0,0.7);
   z-index: 105;
+}
+
+@media (max-width:500px) {
+  .ecolovers_img h3 {
+    
+  }
 }
