@@ -113,7 +113,8 @@
         </div>
       </div>
       <div class="eco_act">
-        <div class="eco_act1">
+        <div class="eco_act1 ecoAct">
+          <img src="img/bt_img1.png" alt="">
           <a href="#">
             <span>
               <h3>우리 손으로 지구를 지킵니다.</h3>
@@ -125,7 +126,8 @@
             </span>
           </a>
         </div>
-        <div class="eco_act2">
+        <div class="eco_act2 ecoAct">
+          <img src="img/bt_img2.png" alt="">
           <a href="#">
             <span>
               <h3>교육을 기본으로 환경 보호를 실천합니다.</h3>
@@ -133,10 +135,12 @@
                 체계화된 교육 과정으로 에코맘 활동가들을 길러내고, 활동가들은 학생부터 주부까지 다양한 눈높이에 맞는 환경 교육을 제공합니다.<br>
                 <!-- 일상생활 속에서 생태적 삶을 추구하는 <strong>환경을 사랑하는 사람들</strong> 지구지킴이에코맘 -->
               </p>
+              <button>더보기</button>
             </span>
           </a>
         </div>
-        <div class="eco_act3">
+        <div class="eco_act3 ecoAct">
+          <img src="img/bt_img3.png" alt="">
           <a href="#">
             <span>
               <h3>미래 세대의 보금자리를 지키기 위함입니다.</h3>
@@ -144,15 +148,18 @@
                 환경 보호와 교육은 우리를 위한 것을 넘어, 미래 세대의 보금자리를 지키는 작은 한걸음입니다.
                 <!-- 생활 속에서 <strong>"작은 것부터 실천"</strong>하는 녹색생활실천가를 양성하고 녹색생활, 녹색소비 캠페인을 전개 -->
               </p>
+              <button>더보기</button>
             </span>
           </a>
         </div>
-        <button class="eco_act_left">
-          <img src="img/arrow_back_botton_left_icon.png" alt="">
-        </button>
-        <button class="eco_act_right">
-          <img src="img/arrow_botton_next_right_icon.png" alt="">
-        </button>
+        <div class="eco_act_btn">
+          <button class="eco_act_left">
+            <img src="img/arrow_back_botton_left_icon.png" alt="">
+          </button>
+          <button class="eco_act_right">
+            <img src="img/arrow_botton_next_right_icon.png" alt="">
+          </button>
+        </div>
       </div>
     </main>
     <footer>
@@ -174,7 +181,7 @@
           <dl>
             <dt>지구지킴이에코맘</dt>
             <dd>회장 : 이은경, 이사장 : 조범용</dd>
-            <dt>사업자등록번호</dt>
+            <dt>고유번호</dt>
             <dd>110-82-75560</dd>
             <dt>대표전화 / 이메일
             <dd>070-7591-0172 / <a href="#">ecomom1@hanmail.net</a></dd>
@@ -195,11 +202,11 @@
     </div>
     <ul class="lnb_list">
       <li>
-        <a href="#">
+        <a href="#" class="list_open">
           <p>소개</p>
           <span class="lnb_toggle"></span>
         </a>
-        <ul class="lnb_sub">
+        <ul class="list_sub">
           <li><a href="#">인사말</a></li>
           <li><a href="#">에코맘 소개</a></li>
           <li><a href="#">함께하는 사람들</a></li>
@@ -208,34 +215,65 @@
         </ul>
       </li>
       <li>
-        <a href="#">
+        <a href="#" class="list_open">
           <p>활동</p>
           <span class="lnb_toggle"></span>
         </a>
+        <ul class="list_sub">
+          <li><a href="#">교육 프로그램</a></li>
+          <li><a href="#">에코맘 강사단</a></li>
+          <li><a href="#">청소년 에코단</a></li>
+          <li><a href="#">에코맘 사회적경제</a></li>
+        </ul>
       </li>
       <li>
-        <a href="#">
+        <a href="#" class="list_open">
           <p>참여</p>
           <span class="lnb_toggle"></span>
         </a>
+        <ul class="list_sub">
+          <li><a href="#">나는야 에코맘</a></li>
+          <li><a href="#">사회적책임</a></li>
+          <li><a href="#">자원봉사</a></li>
+        </ul>
       </li>
       <li>
-        <a href="#">
+        <a href="#" class="list_open">
           <p>뉴스</p>
           <span class="lnb_toggle"></span>
         </a>
+        <ul class="list_sub">
+          <li><a href="#">에코맘 뉴스</a></li>
+          <li><a href="#">에코 뉴스</a></li>
+          <li><a href="#">종합 뉴스</a></li>
+          <li><a href="#">새소식</a></li>
+          <li><a href="#">교육정보</a></li>
+          <li><a href="#">자료실</a></li>
+        </ul>
       </li>
       <li>
-        <a href="#">
+        <a href="#" class="list_open">
           <p>네트워크</p>
           <span class="lnb_toggle"></span>
         </a>
+        <ul class="list_sub">
+          <li><a href="#">에코맘 네트워크</a></li>
+          <li><a href="#">에코데일리 TV</a></li>
+          <li><a href="#">에코 사이트</a></li>
+          <li><a href="#">정책 블로그</a></li>
+        </ul>
       </li>
       <li>
-        <a href="#">
+        <a href="#" class="list_open">
           <p>후원</p>
           <span class="lnb_toggle"></span>
         </a>
+        <ul class="list_sub">
+          <li><a href="#">후원 안내</a></li>
+          <li><a href="#">정기 후원</a></li>
+          <li><a href="#">일시 후원</a></li>
+          <li><a href="#">후원 후기</a></li>
+        </ul>
       </li>
     </ul>
   </div>
