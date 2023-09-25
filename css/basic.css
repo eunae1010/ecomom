@@ -105,11 +105,11 @@ main {
   width: 100%;
 }
 
-.swiper {
+.swiper.slider_main {
   width: 100%;
   cursor: pointer;
 }
-.swiper-slide {
+.slider_main .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -117,7 +117,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-.swiper-slide::after {
+.slider_main .swiper-slide::after {
   display: block;
   content: "";
   position: absolute;
@@ -126,21 +126,21 @@ main {
   background: rgba(0,0,0,0.2);
   z-index: 10;
 }
-.swiper-slide img {
+.slider_main .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.swiper-pagination-bullet-active {
+.slider_main .swiper-pagination-bullet-active {
   background: #fff;
 }
-.swiper-text {
+.slider_main .swiper-text {
   position: absolute;
   color: #fff;
   z-index: 15;
 }
-.swiper-text span {
+.slider_main .swiper-text span {
   font-size: 20px;
   line-height: 20px;
 }
@@ -166,9 +166,6 @@ main {
 .ecolovers_img img {
   width: 100%;
   box-shadow: 2px 2px 4px 0.06px;
-}
-.ecolovers_img1, .ecolovers_img2, .ecolovers_img3 {
-  /* flex: 1; */
 }
 .ecolovers_img h3 {
   margin-top: 10px;
@@ -197,21 +194,25 @@ main {
   margin-top: 50px;
   padding: 0 20px;
 }
-.ecoAct {
+.eco_act .swiper-slide {
   position: relative;
   width: 100%;
   height: 200px;
-  margin-bottom: 50px;
 }
-.eco_act2, .eco_act3 {
-  display: none;
-}
-.ecoAct img {
+.eco_act1, .eco_act2, .eco_act3 {
   width: 60%;
   height: 100%;
-  object-fit: cover;
 }
-.ecoAct span {
+.eco_act1 {
+  background: url('../img/bt_img1.png') no-repeat 50% 0 / cover;
+}
+.eco_act2 {
+  background: url('../img/bt_img2.png') no-repeat 50% 0 / cover;
+}
+.eco_act3 {
+  background: url('../img/bt_img3.png') no-repeat -80px 0 / cover;
+}
+.eco_act span {
   position: absolute;
   top: 20px;
   right: 0;
@@ -222,14 +223,14 @@ main {
   box-shadow: 2px 2px 4px 0.06px;
   border-radius: 16px 16px 0;
 }
-.ecoAct span h3 {
+.eco_act span h3 {
   margin-bottom: 10px;
   font-weight: 700;
 }
-.ecoAct span p {
+.eco_act span p {
   font-size: 12px;
 }
-.ecoAct span button {
+.eco_act span button {
   position: absolute;
   bottom: 15px;
   left: 15px;
@@ -238,22 +239,28 @@ main {
   text-indent: -9999px;
   background: url('../img/plus_icon.png') no-repeat 0 0 / 20px 20px;
 }
-.eco_act_btn button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.eco_act_btn button img {
+.eco_act .swiper-button-prev, .swiper-button-next {
   width: 40px;
   height: 40px;
-  background: #fff;
+  background: #000;
+  color: #fff;
   border-radius: 50%;
 }
-.eco_act_left {
+.eco_act .swiper-button-prev::after, .swiper-button-next::after {
+  position: absolute;
+  font-size: 25px;
+}
+.eco_act .swiper-button-prev {
   left: 0;
 }
-.eco_act_right {
+.eco_act .swiper-button-next {
   right: 0;
+}
+.eco_act .swiper-button-prev::after {
+  left: 12px;
+}
+.eco_act .swiper-button-next::after {
+  right: 12px;
 }
 
 footer {
@@ -383,12 +390,34 @@ footer {
     filter: invert(1);
     box-shadow: 0 0 10px rgba(255,255,255,0.4);
   }
-  .swiper {
+  .swiper.slider_main {
     margin-top: 55px;
   }
+  .eco_act1, .eco_act2, .eco_act3 {
+    width: 100%;
+  }
+  .eco_act span {
+    position: absolute;
+    top: 170px;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .eco_act span h3 {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
   .eco_act span p {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;    
+    display: none;
+  }
+  .eco_act span button {
+    top: 5px;
+    left: 94%;
+    filter: invert(1);
   }
 }
