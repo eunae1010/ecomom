@@ -83,10 +83,8 @@ header button {
   display: block;
   width: 24px;
   height: 24px;
-  color: transparent;
-  font-size: 1px;
-  line-height: 1;
   background: no-repeat 0 0 / 24px 24px;
+  text-indent: -9999px;
   filter: invert(1);
 }
 .icon_gnb {
