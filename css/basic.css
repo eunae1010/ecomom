@@ -86,8 +86,8 @@ header button {
   display: block;
   width: 24px;
   height: 24px;
-  text-indent: -9999px;
   background: no-repeat 0 0 / 24px 24px;
+  text-indent: -9999px;
   filter: invert(1);
 }
 .icon_gnb {
@@ -388,25 +388,31 @@ footer {
 
 @media (max-width:600px) {
   header {
-    height: 46px;
     background: #000;
     filter: invert(1);
     box-shadow: 0 0 10px rgba(255,255,255,0.4);
   }
-  h1 a {
-    width: 120px;
-    height: 46px;
-  }
-  h1 a img {
-    width: 100%;
-    margin: 3.845px 0;
-  }
-  header button {
-    padding: 3px;
-  }
-
   .swiper.slider_main {
-    margin-top: 46px;
+    margin-top: 55px;
+  }
+  .eco_act1, .eco_act2, .eco_act3 {
+    width: 100%;
+  }
+  .eco_act span {
+    position: absolute;
+    top: 170px;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .eco_act span h3 {
+    margin-bottom: 0;
+    font-size: 12px;
   }
   .eco_act1, .eco_act2, .eco_act3 {
     width: 100%;
