@@ -40,7 +40,7 @@ lnbSubBtn.forEach((item, idx) => {
 });
 
 // 메인 이미지 슬라이드
-var swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".slider_main", {
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
@@ -54,7 +54,11 @@ var swiper = new Swiper(".swiper", {
 });
 
 // eco_act
-$('.ecoAct').slick({
-  infinite: true,
-  speed: 500,
+var swiper2 = new Swiper(".eco_act", {
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
